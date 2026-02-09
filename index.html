@@ -107,12 +107,12 @@
         <!-- ডাউনলোড কাউন্টার -->
         <div class="counter-box">
             <i class="fas fa-users"></i> মোট ডাউনলোড: 
-            <span id="downloadCount" class="count-number">500</span> জন
+            <span id="downloadCount" class="count-number">1000</span> জন
         </div>
 
         <!-- ডাউনলোড বাটন -->
         <!-- href এর জায়গায় আপনার অ্যাপের ডাইরেক্ট ডাউনলোড লিংক দিন -->
-        <a href="base (2) (1).apk" class="btn btn-download" onclick="updateCount()">
+        <a href="TOP_BAZAR.apk" class="btn btn-download" onclick="updateCount()">
             <i class="fas fa-download"></i> অ্যাপ ডাউনলোড করুন
         </a>
 
@@ -130,10 +130,10 @@
         document.addEventListener("DOMContentLoaded", () => {
             let countElement = document.getElementById("downloadCount");
             
-            // যদি আগে সেভ করা ভ্যালু থাকে তা নিবে, না থাকলে ৫০০ সেট করবে
+            // যদি আগে সেভ করা ভ্যালু থাকে তা নিবে, না থাকলে ১০০০ সেট করবে
             let currentCount = localStorage.getItem("appDownloads");
             if (!currentCount) {
-                currentCount = 500; 
+                currentCount = 1000; 
                 localStorage.setItem("appDownloads", currentCount);
             }
             
